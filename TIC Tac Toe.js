@@ -50,6 +50,8 @@ function DeclarationOfVictory() {
 		document.getElementById('WinnerName').innerHTML = 'The winner is O'
 		document.getElementById('OPoints').innerHTML = `${ScoringO()} O`;
 	}
+	document.getElementById('Encouraging').style.backgroundColor = 'green';
+	Encouraging('Well done', 'you are Champion', 'very good', 'excellent', 'you are awesome')
 }
 
 function DeclarationOfEquality() {
@@ -64,6 +66,8 @@ function DeclarationOfEquality() {
 		endgame()
 	})
 	document.getElementById('WinnerName').innerHTML = 'draw';
+	document.getElementById('Encouraging').style.backgroundColor = 'red';
+	Encouraging('No one won', 'try next time to win', 'No one won', 'try next time to win', 'No one won')
 }
 
 function WinnerCheck() {
@@ -117,3 +121,9 @@ let ScoringO = (function () {
 		return counter += 1;
 	}
 })()
+
+function Encouraging(a, b, c, d, e) {
+	let array1 = [a, b, c, d, e];
+	let ar1 = array1[Math.floor(Math.random() * 5)]
+	document.getElementById('Encouraging').innerHTML = ar1;
+}

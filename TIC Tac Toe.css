@@ -71,6 +71,12 @@ transition-duration: 1s;
 	left: 100px;
 	width: 100px;
 	height: 30px;
+	transition: 0.4s;
+	cursor: pointer;
+}
+
+#restart:hover{
+	box-shadow: 8px 8px 20px rgb(61, 61, 61);
 }
 
 #WinnerName {
@@ -112,4 +118,15 @@ transition-duration: 1s;
 .Points	{
 background-color: rgba(175, 167, 167, 0.507);
 transition-duration: 0.3s;
+}
+
+#Encouraging {
+	background-color: rgba(218, 218, 218, 0.884);
+	padding-bottom: 5px;
+	text-align: center;
+	border-radius: 10px;
+	height: 30px;
+	font-size: 25px;
+	padding-top: 10px;
+	font-weight: bold;
 }
