@@ -126,4 +126,4 @@ function Encouraging(a, b, c, d, e) {
 	let array1 = [a, b, c, d, e];
 	let ar1 = array1[Math.floor(Math.random() * 5)]
 	document.getElementById('Encouraging').innerHTML = ar1;
-}
+};
